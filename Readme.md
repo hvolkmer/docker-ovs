@@ -6,6 +6,6 @@ basically the same as [the original](https://github.com/socketplane/docker-ovs/b
 
 so that we can start the container like this:
 
-docker run -itd --name=ovs-container --net=host --cap-add NET_ADMIN --cap-add SYS_MODULE -v /lib/modules:/lib/modules hvolkmer/ovs
+    docker run -itd --name=ovs-container --net=host --cap-add NET_ADMIN --cap-add SYS_MODULE -v /lib/modules:/lib/modules hvolkmer/ovs
 
 `--net=host` is not possible with the current original container.
